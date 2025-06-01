@@ -1,4 +1,4 @@
-/*
+/* Ejercicio Parcial 2023-1
 Verificar si una string es palindrome o no: somos o no somos, luz azul
 */
 
