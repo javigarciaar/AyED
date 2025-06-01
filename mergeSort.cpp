@@ -2,6 +2,7 @@
 using namespace std;
 
 void merge(int arr[], int left, int mid, int right){
+	
 	int sA = mid - left +1;
 	int sB = right - mid;
 	
@@ -18,33 +19,42 @@ void merge(int arr[], int left, int mid, int right){
 	int ai=0, bi=0, ci=left;
 	
 	while(ai < sA && bi < sB){
+		
 		if(A[ai] == B[bi]){
+			
 			arr[ci] = A[ai];
-			ai++; bi++; ci++;
+			ai++; ci++;
+			arr[ci] = B[bi];
+			bi++; ci++;
+			
 		} else if(A[ai] < B[bi]) {
+			
 			arr[ci] = A[ai];
 			ai++; ci++;
 			
 		} else {
+			
 			arr[ci] = B[bi];
 			bi++; ci++;
 		}
 	}
-	
+
 	while( ai < sA){
+		
 		arr[ci] = A[ai];
 		ai++; ci++;
 	}
 	
 	while( bi < sB){
+		
 		arr[ci] = B[bi];
 		bi++; ci++;
 	}
 }
 
 void MergeSort(int arr[], int left, int right){
-	
-	if(left <= right) return;
+
+	if(left >= right) return;
 	
 	int mid = left + (right - left) / 2;
 	MergeSort(arr, left, mid);
@@ -64,4 +74,3 @@ int main(){
 	}
 	return 0;
 }
-
