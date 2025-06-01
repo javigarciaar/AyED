@@ -1,4 +1,4 @@
-/*La ferretería TheFerro vende cabilla. Los clientes suelen pedir distintas cantidades de metros de cabilla, por lo que siempre quedan 
+/* 2 17) La ferretería TheFerro vende cabilla. Los clientes suelen pedir distintas cantidades de metros de cabilla, por lo que siempre quedan 
 segmentos cortos sin vender. Todos esos segmentos van quedando "frios" en la ferretería, por lo que se ha decidido soldarlos para 
 vender cabillas repotenciadas de 100 metros, a un precio razonablemente menor. El dueño de la ferretería entiende que este 
 problema es complejo, pues tiene que tomar un conjunto que pedazos de cabilla que sumen EXACTAMENTE 100 metros, y que 
@@ -32,7 +32,7 @@ void soldadura(int *arr, int i){
         }
         indice= j;}
     }
-    if(i+1<n){
+    if(i+1<n){ // me ahorro la ultima iter que hace sawp(n-1,n-1)
         for(int k=i; k<n; k++){
             swap(arr[i], arr[k]);
             soldadura(arr, i+1);
