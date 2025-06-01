@@ -1,6 +1,6 @@
 /* Practica #1: Tipos de Datos (Guia 2019)
 8. Para las siguientes instrucciones, construya el estado de todas las variables en la memoria
-(de forma gr·fica) que muestre que ocurre en ella, y cu·l es la salida del programa.
+(de forma gr√°fica) que muestre que ocurre en ella, y cu√°l es la salida del programa.
 */
 #include <iostream>
 using namespace std;
