@@ -1,5 +1,5 @@
 /*Javier Garcia 5/6/25
-IMPLEMENTACION DE PILAS usando memoria dinamica
+IMPLEMENTACION DE PILAS usando memoria dinamica y Templates
 */
 
 #include <iostream>
